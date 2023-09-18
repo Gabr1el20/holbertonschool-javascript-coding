@@ -7,5 +7,5 @@ request.get(process.argv[2], (error, response)  => {
         return;
     }
 
-    console.log(`code: ${response}`);
+    console.log(`code: ${response.statusCode}`);
 })

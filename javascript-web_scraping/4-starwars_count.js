@@ -9,7 +9,7 @@ request.get(apiMovie, (err, response, body) => {
   const movies = JSON.parse(body).results;
   // we travel across each movie
     movies.forEach(movie => {
-    movie.character.forEach(character => {
+    movie.characters.forEach(character => {
         if (character.includes('/people/18')) characterFilms++;
     });
   });

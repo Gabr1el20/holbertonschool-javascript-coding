@@ -26,7 +26,6 @@ async function countStudents(path) {
         }
       }
     }
-    console.log(fieldCounts);
 
     // Calcular el número total de estudiantes
     const totalStudents = Object.values(fieldCounts).reduce((acc, count) => acc + count, 0);

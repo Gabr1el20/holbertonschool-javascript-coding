@@ -21,7 +21,7 @@ const app = http.createServer((req, res) => {
       })
       .catch((error) => {
         res.statusCode = 400;
-        res.write(`${error}`);
+        res.write(`This is the list of our students\n${error}`);
         res.end();
       });
   }
